@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: Roboto, Arial, Helvetica;
+}
+body:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(assets/img/fundo-praia.webp);
+    background-size: cover;
+    background-repeat: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+#menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 47px;
+    min-width: 700px;
+    align-items: center;
+    font-size: 16px;
+}
+.a-menu {
+    text-decoration: none;
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.a-menu:hover {
+    background-color: #787878;
+}
+#exercise1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exercise {
+    width: 90vw;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+      padding-bottom: 5vh;
+}
+#deck {
+    width: 84px;
+    height: 113px;
+    background-image: url(./assets/img/deck.png);
+    box-shadow: #0a0a0a66 2px 2px, #1615164d 4px 4px, #13121233 6px 6px,
+        #1817171a 8px 8px, #1d1b1c0d 10px 10px;
+}
+
+#frm-inputs {
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ctn-shuffle {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vh;
+    gap: 4vw;
+}
+#btn-shuffle {
+    width: 10vw;
+    height: 4vh;
+    /* background-color: #787878;
+    color: #fff; */
+    background-color: #78787870;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* #btn-shuffle:hover {
+    background-color: #78787870;
+    color: #000;
+} */
+#btn-play {
+    width: 10vw;
+    height: 4vh;
+    color: #fff;
+    background-color: #787878;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* #btn-play:hover {
+    background-color: #78787870;
+    color: #000;
+} */
+#p-deck {
+    font-weight: 600;
+    font-size: 1.2vw;
+    word-break: break-word;
+    padding-top: 4vh;
+}
+#ctn-play {
+    padding-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+}
+#card1 {
+    width: 84px;
+    height: 113px;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+#card2 {
+    width: 84px;
+    height: 113px;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+#card3 {
+    width: 84px;
+    height: 113px;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+#card4 {
+    width: 84px;
+    height: 113px;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+#card5 {
+    width: 84px;
+    height: 113px;
+    background-size: contain;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}

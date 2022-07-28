@@ -92,7 +92,13 @@ function shuffle() {
 
                 for (let i=0; i<52; i++){
                     if (cards[i].n>1){
-                        return Promise.reject('Erro de duplicidade.')
+                        let hand = '';
+                        for (let j=0; j<52; j++){
+                            if (cards[j].n>0){
+                                hand += `{${cards[j].code}: ${cards[j].n}}, ` ;
+                            }
+                        }
+                        return Promise.reject(`Erro de duplicidade. ${hand}`)
                     }
                 }           
 

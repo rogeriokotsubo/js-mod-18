@@ -23,7 +23,9 @@ export default function resultHand(){
             }
             sequencia += 1;
         } else {
-            sequencia = 0;
+            if (sequencia<5){
+                sequencia = 0;
+            }
         }
     }
 
@@ -32,7 +34,7 @@ export default function resultHand(){
             color = 1;  // 5 cartas do mesmo naipe
         }
     }
-
+    // console.log(`Color: ${color}, Seq: ${sequencia}`, deckHand);
     if (sequencia === 5 && color === 1) {       // 5 cartas em sequencia do mesmo naipe
         msg.innerHTML = `Straight Flush !!!!!!!`;
     } else if (quadra === 1) {                // 4 cartas iguais

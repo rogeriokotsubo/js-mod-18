@@ -9,6 +9,9 @@ export default function getCard(_url) {
             }
         })
         .then(function(data) {
+            if (data.cards[0].success===false){
+                return Promise.reject('Erro buscando 1 carta');
+            }
             const cCard = {
                             code: data.cards[0].code,
                             img: data.cards[0].image,

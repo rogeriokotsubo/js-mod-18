@@ -15,7 +15,7 @@ export function filterCard(_code){
 
 export function createHand(){
     for (let i = 0; i < 13; i++) {
-        deckHand[i] = { "card": cards[i].card, "n": 0 };
+        deckHand.push({ "card": cards[i].card, "n": 0 });
     };
 
     suitHand [0] = 0; // heart
@@ -25,8 +25,13 @@ export function createHand(){
 } 
 
 export function clearHand(){
-    for (let i = 0; i < 13; i++) {
-        deckHand[i].n = 0;
+    for (let i = 0; i < 52; i++) {
+        cards[i].n = 0;
+
+        if (i<13){
+            deckHand[i].n = 0;
+        }
+
         if (i<4){
             suitHand[i] = 0;
         }
